@@ -28,8 +28,8 @@ function drop() {
     button.classList.toggle("show")
 }
 
-window.onclick = function (event) {
-    if (!event.target.mathces("button")) {
+window.onclick = function(event) {
+    if (event.target.matches(".dropdown")) {
         var i;
         for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];

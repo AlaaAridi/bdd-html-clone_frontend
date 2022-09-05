@@ -1,73 +1,81 @@
 /*CSS Reset*/
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 img {
-  height: 100%;
+    height: 100%;
 }
+
 
 /* navigation bar*/
 
 .top-nav {
-  display: flex;
-  justify-content: space-between;
-  height: 80px;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
 }
 
 .links {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 15px;
-  font-weight: bold;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
 }
 
-.links > li {
-  margin-right: 20px;
-  cursor: pointer;
-  background-color: #bbb;
+.links>li {
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: #bbb;
 }
 
-.links > li:last-child {
-  margin-right: 50px;
+.links>li:last-child {
+    margin-right: 50px;
 }
+
 
 /* nav bar content */
 
 .dropdown {
-  display: inline-block;
-  position: relative;
+    display: inline-block;
+    position: relative;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  width: 100%;
-  overflow: auto;
-  box-shadow: 0 8 16 0px rgb(234, 21, 21);
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0 8 16 0px rgb(234, 21, 21);
 }
 
 .dropdown-content a {
-  display: block;
-  color: black;
-  padding: 10px;
+    display: block;
+    color: black;
+    padding: 10px;
 }
 
-.dropdown:onclick.dropdown-content {
-  display: block;
+.dropdown:focus>.dropdown-content {
+    display: block !important;
 }
+
+
+/* note to self tab index*/
 
 .dropdown-content a:onclick {
-  color: rgb(255, 140, 0);
-  background-color: rgb(0, 0, 0);
+    color: rgb(255, 140, 0);
+    background-color: rgb(0, 0, 0);
 }
 
+
 /*HERO*/
+
+
 /*
 .hero { background:;
     background-size: cover;
@@ -78,89 +86,92 @@ img {
   
 }
 */
+
 .hero-content {
-  padding: 40vh 0 10vh 0;
-  width: 100%;
+    padding: 40vh 0 10vh 0;
+    width: 100%;
 }
 
 .hero-heading {
-  font-size: 64px;
-  margin-bottom: 40px;
+    font-size: 64px;
+    margin-bottom: 40px;
 }
+
 
 /* images slideshow*/
 
 .slideshow {
-  width: fit-content;
-  position: relative;
-  margin: auto;
+    width: fit-content;
+    position: relative;
+    margin: auto;
 }
 
 .slide {
-  display: none;
+    display: none;
 }
 
 .faded {
-  animation-name: fade;
-  animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .dots {
-  text-align: center;
+    text-align: center;
 }
 
 .dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 .active {
-  background-color: #717171;
+    background-color: #717171;
 }
+
 
 /* bdd foundations */
 
 .foundations {
-  display: flex;
-  justify-content: space-between;
-  background-color: #bbb;
+    display: flex;
+    justify-content: space-between;
+    background-color: #bbb;
 }
 
 .found-header {
-  align-self: center;
+    align-self: center;
 }
 
 .found {
-  display: flex;
-  justify-content: center;
-  background-color: #fff;
-  padding: 1vw 1vh;
-  border-style: none;
-  border-radius: 5px;
-  width: 19%;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 1vw 1vh;
+    border-style: none;
+    border-radius: 5px;
+    width: 19%;
 }
 
 .found-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
 }
 
-.found-box>p{
+.found-box>p {
     width: 80%;
     display: flex;
     align-self: center;
@@ -168,55 +179,56 @@ img {
 
 .found-logo {
     align-self: center;
-  width: 125px;
-  height: 80px;
+    width: 125px;
+    height: 80px;
 }
 
 .found-title {
-  font: bolder;
-  font-size: larger;
-  padding: 10px;
+    font: bolder;
+    font-size: larger;
+    padding: 10px;
 }
 
 .found-info {
-  font-size: medium;
+    font-size: medium;
 }
+
 
 /* Utilities*/
 
 .container {
-  padding: 15px 10px;
-  width: 100%;
+    padding: 15px 10px;
+    width: 100%;
 }
 
 .btn {
-  padding: 17px 19px;
-  border: none;
-  border-radius: 5px;
+    padding: 17px 19px;
+    border: none;
+    border-radius: 5px;
 }
 
 .btn-blue {
-  background-color: #0078be;
-  color: white;
+    background-color: #0078be;
+    color: white;
 }
 
+
 /* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 300px) {
-  .text {
-    font-size: 11px;
-  }
+    .text {
+        font-size: 11px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
-  .mobile {
-    flex-direction: column;
-  }
-
-  .media-images > img {
-    width: 100%;
-  }
-
-  .program-images > div {
-    width: 100%;
-  }
+    .mobile {
+        flex-direction: column;
+    }
+    .media-images>img {
+        width: 100%;
+    }
+    .program-images>div {
+        width: 100%;
+    }
 }
